@@ -9,9 +9,6 @@ import org.demo.yuyang.pagerslidingstripdemo.adapter.ViewPageFragmentAdapter;
 import org.demo.yuyang.pagerslidingstripdemo.base.BaseViewPagerFragment;
 import org.demo.yuyang.pagerslidingstripdemo.interf.OnTabReselectListener;
 
-/**
- * Created by yuyang on 2/26/16.
- */
 public class NewsViewPagerFragment extends BaseViewPagerFragment
         implements OnTabReselectListener {
 
