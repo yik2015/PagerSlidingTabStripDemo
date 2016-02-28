@@ -16,9 +16,6 @@ import org.demo.yuyang.pagerslidingstripdemo.R;
 
 import java.util.ArrayList;
 
-/**
- * Created by yuyang on 2/26/16.
- */
 public class ViewPageFragmentAdapter extends FragmentStatePagerAdapter {
 
 

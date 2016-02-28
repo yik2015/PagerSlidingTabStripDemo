@@ -2,9 +2,6 @@ package org.demo.yuyang.pagerslidingstripdemo.adapter;
 
 import android.os.Bundle;
 
-/**
- * Created by yuyang on 2/26/16.
- */
 public class ViewPageInfo {
 
     public final String tag;

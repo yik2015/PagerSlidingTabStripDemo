@@ -12,7 +12,6 @@
         app:allowWidthFull="true"
         app:slidingBlock="?attr/sliding_block_bg" />
 
-
     <View
         android:id="@+id/view_pager_line"
         android:layout_width="match_parent"

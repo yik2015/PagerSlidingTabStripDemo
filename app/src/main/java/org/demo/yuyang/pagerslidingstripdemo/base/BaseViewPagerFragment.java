@@ -21,11 +21,9 @@ public abstract class BaseViewPagerFragment extends BaseFragment {
     protected ViewPageFragmentAdapter mTabsAdapter;
 //    protected EmptyLayout mErrorLayouto;
 
-
     @Nullable
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
-//        return super.onCreateView(inflater, container, savedInstanceState);
         return inflater.inflate(R.layout.base_viewpage_fragment, null);
     }
 

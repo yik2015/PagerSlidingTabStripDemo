@@ -13,9 +13,6 @@ import org.demo.yuyang.pagerslidingstripdemo.R;
 import org.demo.yuyang.pagerslidingstripdemo.interf.BaseFragmentInterface;
 import org.demo.yuyang.pagerslidingstripdemo.interf.DialogControl;
 
-/**
- * Created by yuyang on 2/26/16.
- */
 public class BaseFragment extends Fragment implements View.OnClickListener,
         BaseFragmentInterface {
     public static final int STATE_NONE = 0;
@@ -26,11 +23,6 @@ public class BaseFragment extends Fragment implements View.OnClickListener,
     public static final int mState = STATE_NONE;
 
     protected LayoutInflater mInflater;
-
-//    public AppContext getApplication() {
-//        return (AppContext) getActivity().getApplication();
-//    }
-
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
