@@ -13,7 +13,17 @@ import org.demo.yuyang.pagerslidingstripdemo.R;
 /**
  * Created by yuyang on 2/27/16.
  */
-public class Fragment1 extends Fragment{
+public class NewsFragment extends Fragment {
+    protected int mCatalog = 1;
+
+    @Override
+    public void onCreate(@Nullable Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        Bundle args = getArguments();
+        if (args != null) {
+            mCatalog = args.getInt(NewsViewPagerFragment.BUNDLE_KEY_CATALOG);
+        }
+    }
 
     @Nullable
     @Override
@@ -21,7 +31,12 @@ public class Fragment1 extends Fragment{
         View view = inflater.inflate(R.layout.layout_fragment, null);
         TextView text = (TextView) view.findViewById(R.id.fragment_text);
 
-        text.setText("fragment #1");
+        switch (mCatalog) {
+            case NewsList.CATALOG_ALL:text.setText("NewsFragment # CATALOG_ALL");
+                break;
+            case NewsList.CATALOG_WEEK:text.setText("NewsFragment # CATALOG_WEEK");
+        }
+
         return view;
     }
 }

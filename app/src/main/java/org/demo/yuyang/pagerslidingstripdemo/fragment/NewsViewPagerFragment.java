@@ -12,24 +12,31 @@ import org.demo.yuyang.pagerslidingstripdemo.interf.OnTabReselectListener;
 public class NewsViewPagerFragment extends BaseViewPagerFragment
         implements OnTabReselectListener {
 
+    public static final String BUNDLE_KEY_CATALOG = "BUNDLE_KEY_CATALOG";
+
     @Override
     protected void onSetupTabAdapter(ViewPageFragmentAdapter adapter) {
         String[] title = getResources().getStringArray(R.array.news_viewpage_arrays);
-        adapter.addTab(title[0], "news", Fragment1.class, null);
-        adapter.addTab(title[1], "news_week", Fragment2.class, null);
-        adapter.addTab(title[2], "latest_blog", Fragment3.class, null);
-        adapter.addTab(title[3], "recommend_blog", Fragment4.class, null);
+        adapter.addTab(title[0], "news", NewsFragment.class,
+                getBundle(NewsList.CATALOG_ALL));
+        adapter.addTab(title[1], "news_week", NewsFragment.class,
+                getBundle(NewsList.CATALOG_WEEK));
+
+        adapter.addTab(title[2], "latest_blog", BlogFragment.class,
+                getBundle(BlogList.CATALOG_LATEST));
+        adapter.addTab(title[3], "recommend_blog", BlogFragment.class,
+                getBundle(BlogList.CATALOG_RECOMMEND));
     }
 
     private Bundle getBundle(int newType) {
         Bundle bundle = new Bundle();
-        bundle.putInt("key", newType);
+        bundle.putInt(BUNDLE_KEY_CATALOG, newType);
         return bundle;
     }
 
     private Bundle getBundle(String catalog) {
         Bundle bundle = new Bundle();
-        bundle.putString("key2", catalog);
+        bundle.putString(BUNDLE_KEY_CATALOG, catalog);
         return bundle;
     }
 
