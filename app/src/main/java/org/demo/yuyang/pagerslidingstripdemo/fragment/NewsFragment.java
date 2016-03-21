@@ -9,6 +9,7 @@ import android.view.ViewGroup;
 import android.widget.TextView;
 
 import org.demo.yuyang.pagerslidingstripdemo.R;
+import org.demo.yuyang.pagerslidingstripdemo.bean.NewsList;
 
 /**
  * Created by yuyang on 2/27/16.

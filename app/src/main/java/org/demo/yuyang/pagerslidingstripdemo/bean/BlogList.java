@@ -1,4 +1,4 @@
-package org.demo.yuyang.pagerslidingstripdemo.fragment;
+package org.demo.yuyang.pagerslidingstripdemo.bean;
 
 /**
  * Created on 3/21/16.

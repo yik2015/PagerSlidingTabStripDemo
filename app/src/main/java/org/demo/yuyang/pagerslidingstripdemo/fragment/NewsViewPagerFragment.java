@@ -7,6 +7,8 @@ import android.view.View;
 import org.demo.yuyang.pagerslidingstripdemo.R;
 import org.demo.yuyang.pagerslidingstripdemo.adapter.ViewPageFragmentAdapter;
 import org.demo.yuyang.pagerslidingstripdemo.base.BaseViewPagerFragment;
+import org.demo.yuyang.pagerslidingstripdemo.bean.BlogList;
+import org.demo.yuyang.pagerslidingstripdemo.bean.NewsList;
 import org.demo.yuyang.pagerslidingstripdemo.interf.OnTabReselectListener;
 
 public class NewsViewPagerFragment extends BaseViewPagerFragment
