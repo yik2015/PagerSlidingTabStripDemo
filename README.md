@@ -1,5 +1,7 @@
 PagerSlidingTabStripDemo
 
+![pro_pic](./pic/pagersliding2.png)
+
 You may like this: [Defining custom attrs](http://stackoverflow.com/questions/3441396/defining-custom-attrs)
 
 and this: [Creating a View Class](https://developer.android.com/training/custom-views/create-view.html)
