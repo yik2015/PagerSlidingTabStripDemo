@@ -6,9 +6,9 @@
         <item name="colorPrimary">@color/colorPrimary</item>
         <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
         <item name="colorAccent">@color/colorAccent</item>
-        <item name="lineColor">@color/day_line_color</item>
         <item name="windows_bg">@color/day_windows_bg</item>
         <item name="sliding_block_bg">@drawable/image_sliding_block</item>
+        <item name="lineColor">@color/day_line_color</item>
     </style>
 
     <style name="viewpage_slidingTabTitle">
